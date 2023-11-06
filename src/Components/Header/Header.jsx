@@ -4,6 +4,7 @@ import { Container,Row } from 'reactstrap';
 import logo from "../../assets/images/eco-logo.png";
 import userIcon from "../../assets/images/user-icon.png";
 import {NavLink} from 'react-router-dom'
+import { motion} from 'framer-motion';
 
 
 const nav_links = [
@@ -55,15 +56,17 @@ function Header() {
 
             <div className="nav_icons">
                 
-              <span className='icon-heart'>
+              <span className='icon-fav'>
               <i class="ri-heart-line"></i>
-                  </span>
+              <span className='badge'>1</span>
+              </span>
                 <span className='cart_icon'>
                 <i class="ri-shopping-bag-line"></i>
+                <span className='badge'>1</span>
                 </span>
 
                 <span className='user_icon'>
-                  <img src={userIcon} alt="Usericon" title='Usericon' className='cart_icon user_icon'/>
+                  <motion.img whileTap={{scale: "1.2"}}  src={userIcon} alt="Usericon" title='Usericon' className='cart_icon user_icon'/>
                 </span>
 
             </div>

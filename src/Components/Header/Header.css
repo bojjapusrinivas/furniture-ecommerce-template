@@ -36,7 +36,6 @@
  
  }
 
-
 /* Navagation */
 .navagation .nav-menu{
     display: flex;
@@ -64,7 +63,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: 18px;
 
 }
 
@@ -78,6 +77,24 @@
     width: 25px;
     cursor: pointer;
 }
+
+.cart_icon,
+.icon-fav{
+    position: relative;
+
+}
+
+.cart_icon .badge,
+.icon-fav .badge{
+    position: absolute;
+    left: 10px;
+    top: -3px;
+    background: #000;
+    border-radius: 50px;
+    font-size: 8px;
+}
+
+
 
 /* Mobile Menu */
 .mobile_menu{
