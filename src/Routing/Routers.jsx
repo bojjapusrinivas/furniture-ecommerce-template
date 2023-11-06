@@ -26,8 +26,8 @@ function Routers() {
             <Route path='login' exact element={<LogIn/>}/>
             <Route path='productdetils:id' exact element={<ProductDetails/>}/>
             <Route path='shop' exact element={<Shop/>}/>
-            <Route path='singup' exact element={<SingUp/>}/>
-            <Route path="" element={<PageError/>}/>
+            <Route path='signup' exact element={<SingUp/>}/>
+            <Route path="*" element={<PageError/>}/>
           
            
 

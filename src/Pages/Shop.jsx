@@ -1,9 +1,14 @@
 import React from 'react'
+import Helmet from '../Components/Helmet/Helmet'
 
 function Shop() {
-  return (
-    <div>Shop</div>
-  )
+  return  <Helmet title={"SHOP"}>
+
+SHOP
+
+
+
+  </Helmet>
 }
 
 export default Shop
