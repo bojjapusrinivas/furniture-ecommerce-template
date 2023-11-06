@@ -1,0 +1,93 @@
+/* Nav wapper */
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:70px;
+    width: 100%;
+   
+}
+
+/* LOGO */
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width:35px;
+}
+
+.logo h1{
+   font-size: 18px;
+   font-weight: bold;
+   margin-bottom: 0px;
+   letter-spacing: 1px;
+   margin-top:5px;
+
+}
+.logo p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+ 
+ }
+
+
+/* Navagation */
+.navagation .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding:0px;
+    margin: 0px;
+}
+.navagation .nav-menu .nav-item a{
+    font-size: 16px !important;
+    font-weight: 400;
+    /* text-transform: uppercase !important; */
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.navagation .nav-menu .nav-item a.nav_active{
+    font-weight: bold;
+}
+
+/* Nav Icon */
+.nav_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.nav_icons span i{
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+.nav_icons span img{
+    width: 25px;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile_menu{
+    display: none;
+}
+.mobile_menu span i{
+    font-size: 22px;
+    color: var(--primary-color);
+   
+}
+
+
+
