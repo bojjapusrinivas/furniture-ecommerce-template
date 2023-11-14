@@ -1,0 +1,14 @@
+.services_item{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 15px;;
+}
+
+.services_item i{
+    font-size: 18px;
+    color:#fff;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+}
+
