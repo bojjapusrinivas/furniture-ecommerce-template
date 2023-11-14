@@ -1,7 +1,9 @@
 import React from 'react'
 import { Container,Row, Col } from 'reactstrap'
 
-import "./services.css"
+import { motion } from 'framer-motion'
+
+import ServicData from "../assets/data/serviceData"
 
 function services() {
   return (
@@ -9,15 +11,25 @@ function services() {
     <section className="services">
         <Container>
             <Row>
-                <Col lg="3" md="4">
-                    <div className="services_item">
-                        <i class="ri-truck-line"></i>  
+
+                {
+                    ServicData.map((value,key) => (
+                <Col lg="3" md="4" whileTap={{scale:1.2}}>
+                    <div  className="services_item" style={{backgroundColor:value.bg}}>
+                        <i class={value.icon}></i>  
                         <div className="service-item-content">
-                            <h3>Free Shipping</h3>
-                            <p>Free shipping on all orders over</p>
+                            <h3>{value.title}</h3>
+                            <p>{value.subtitle}</p>
                         </div>
                     </div>
                 </Col>
+
+
+                    ))
+                }
+
+
+                
             </Row>
         </Container>
     </section>
