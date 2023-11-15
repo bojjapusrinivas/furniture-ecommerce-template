@@ -63,14 +63,58 @@ a {
   padding-top: 50px;
 }
 
+.margin-top-50{
+  margin-top: 50px;
+}
+
 
 
 
 /*--------------------  
       SUBTITLE
 ---------------------*/
-
 .subtitle h2{
   font-size: 22px;
   font-weight: bold;
+  margin:25px 0px;
+}
+
+
+/*===================
+   TIME COUNTER
+====================*/
+
+.timer-counter{
+  background-color: var(--primary-color);
+  height: 270px;
+}
+
+.timecount-img-block{
+  text-align: right;
+}
+
+.timecount-img-block img{
+  width: 350px;;
+}
+
+
+.timer-bottom .btn{
+  padding: 5px;
+  background-color: #fff;
+  margin-left: 15px;
+  border-radius: 3px;
+  outline: none;
+  font-weight: 600;
+  border:none;
+  font-size: 15px;
+}
+
+.timer-bottom .btn:hover{
+  background-color: #fff;
+}
+.timer-bottom .btn a{
+  text-decoration: none;
+  color: var(--primary-color);
+  width: 40px;
+  
 }

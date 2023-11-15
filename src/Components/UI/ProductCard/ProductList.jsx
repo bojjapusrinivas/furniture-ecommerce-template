@@ -7,11 +7,11 @@ import React from 'react'
 // COMPONENTS
 
 import ProductCard from './ProductCard'
-function ProductList({TrendingProduct}) {
+function ProductList({data}) {
   return (
     <>
     {
-        TrendingProduct.map((item, index)=>(
+        data?.map((item, index)=>(
             <ProductCard items={item} key={index}/>
         ))
  }
