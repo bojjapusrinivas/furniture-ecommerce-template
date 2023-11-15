@@ -54,3 +54,23 @@ a {
   text-decoration: none;
   color: unset;
 }
+
+
+/*--------------------  
+     paddings
+---------------------*/
+.padding-top-50{
+  padding-top: 50px;
+}
+
+
+
+
+/*--------------------  
+      SUBTITLE
+---------------------*/
+
+.subtitle h2{
+  font-size: 22px;
+  font-weight: bold;
+}
