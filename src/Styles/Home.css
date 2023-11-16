@@ -41,3 +41,31 @@
 
 }
 
+@media screen and (max-width:767px) {
+    .hero_content {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .hero-img img{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .hero_section .row div:nth-child(1){
+        order: 2;
+    }
+
+    .buy_btn{
+        margin-top:10px;
+        margin-bottom: 30px;
+    }
+
+    .hero_Title {
+        font-size: 30px;
+    }
+
+    
+}

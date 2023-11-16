@@ -8,7 +8,7 @@ function Layout() {
   return (
     <>
     <div>
-        {/* <Header/> */}
+        <Header/>
         <Routers/>
         <Footer/>
     </div>

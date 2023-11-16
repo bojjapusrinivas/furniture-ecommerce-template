@@ -1,0 +1,90 @@
+[
+    {
+        "MainTab": "About Us",
+        "SubTab": [
+            {
+                "subtabs": "Why Us",
+                "Link": ""
+            },
+            {
+                "subtabs": "Awards & Recognition",
+                "Link": ""
+            },
+            {
+                "subtabs": "Measure Your Space",
+                "Link": ""
+            },
+            {
+                "subtabs": "Care and Maintenance",
+                "Link": ""
+            },
+            {
+                "subtabs": "Contact Us",
+                "Link": ""
+            }
+        ]
+    },
+    {
+        "MainTab": "Services",
+        "SubTab": [
+            {
+                "subtabs": "B2B",
+                "Link": ""
+            },
+            {
+                "subtabs": "Design Projects",
+                "Link": ""
+            },
+            {
+                "subtabs": "Collaborators",
+                "Link": ""
+            },
+            {
+                "subtabs": "FAQ",
+                "Link": ""
+            }
+        ]
+    },
+    {
+        "MainTab": "Shop",
+        "SubTab": [
+            {
+                "subtabs": "Furniture",
+                "Link": ""
+            },
+            {
+                "subtabs": "Collections",
+                "Link": ""
+            },
+            {
+                "subtabs": "Accents",
+                "Link": ""
+            },
+            {
+                "subtabs": "Art",
+                "Link": ""
+            }
+        ]
+    },
+    {
+        "MainTab": "Terms and Conditions",
+        "SubTab": [
+            {
+                "subtabs": "Privacy Policy",
+                "Link": ""
+            },
+            {
+                "subtabs": "Return Policy",
+                "Link": ""
+            },
+            {
+                "subtabs": "Shipping Policy",
+                "Link": ""
+            },
+            {
+                "subtabs": "Warranty Policy",
+                "Link": ""
+            }
+        ]
+    }
+]

@@ -30,7 +30,7 @@ function Home() {
   const [newarrivelmobileProduct, SetNewArrivelMobileProduct] = useState([]);
   const [newarrivelwirelessProduct, setNewarrivelWirelessProduct] = useState([]);
   const [poplerProduct, setPoplerProduct] = useState([]);
-
+ 
   useEffect(() => {
     const FiltredTrendingProduct = products.filter(
       (item) => item.category === "chair"

@@ -1,4 +1,8 @@
 /* Nav wapper */
+
+.header{
+    background-color: #fff;
+}
 .nav-wrapper{
     display: flex;
     justify-content: space-between;
@@ -106,5 +110,15 @@
    
 }
 
+.sticky-header{
+   position:sticky;
+    width: 100%;
+    top:0px;
+    left: 0px;
+    z-index: 9999;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    background-color: #fff;
+    
+}
 
 
