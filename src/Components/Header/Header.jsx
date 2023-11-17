@@ -22,31 +22,33 @@ const nav_links = [
 ];
 
 function Header() {
-    
-  const headerRef = useRef(null)
+  const menuRef = useRef(null);
+  const headerRef = useRef(null);
 
-  const stickyHeaderFun = () =>{
-      window.addEventListener("scroll", () =>{
-        if( document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ){
-          headerRef.current.classList.add("sticky-header")
-          }else{
-            headerRef.current.classList.remove("sticky-header")
-          }
-        }
-  )
+  const stickyHeaderFun = () => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("sticky-header");
+      } else {
+        headerRef.current.classList.remove("sticky-header");
       }
+    });
+  };
 
-    
-
-  useEffect(()=>{
+  useEffect(() => {
     stickyHeaderFun();
+    return () => window.removeEventListener("scroll", stickyHeaderFun);
+  });
 
-    return () => window.removeEventListener('scroll', stickyHeaderFun)
-  })
+  const togglemenu = () => menuRef.current.classList.toggle("mobil-menu-active")
+
 
 
   return (
-    <header class="header"  ref={headerRef}>
+    <header class="header" ref={headerRef}>
       <Container>
         <Row>
           <div className="nav-wrapper">
@@ -60,7 +62,7 @@ function Header() {
             </div>
             {/* NAVAGATION SECTION */}
 
-            <div className="navagation">
+            <div className="navagation" ref={menuRef} onClick={togglemenu}>
               <ul className="nav-menu">
                 {nav_links.map((value, key) => (
                   <li className="nav-item" key={key}>
@@ -98,15 +100,14 @@ function Header() {
                   className="cart_icon user_icon"
                 />
               </span>
+              <div className="mobile_menu" >
+                <span onClick={togglemenu}>
+                  <i class="ri-menu-line"></i>
+                </span>
+              </div>
             </div>
 
             {/* MOBILE NAVTATION */}
-
-            <div className="mobile_menu">
-              <span>
-                <i class="ri-menu-line"></i>
-              </span>
-            </div>
           </div>
         </Row>
       </Container>
@@ -114,5 +115,4 @@ function Header() {
   );
 }
 
-
-export default  Header
+export default Header;

@@ -1,6 +1,6 @@
 //Dependiences
-import { Container, Row,Col, FormGroup,Label, Input, Button } from 'reactstrap'
-import { motion } from "framer-motion";
+import { Container, Row,Col, FormGroup, Input, Button } from 'reactstrap'
+
 
 
 // Data import
@@ -24,10 +24,10 @@ function Footer() {
            
 
 
-            <Col lg="8" col="md-4">
+            <Col lg="8" md="12" sm="12">
             <Row>
               {footerData.map((tab, index) => (
-                <Col lg="3" col="md-4">
+                <Col lg="3" md="3" sm="6" xs="6">
                 <div key={index}>
                   <p className='tab-header'>{tab.MainTab}</p>
                   <ul className='subtabs'>
@@ -43,7 +43,7 @@ function Footer() {
               </Row>
               </Col>
          
-              <Col lg="4" col="md-4">
+              <Col lg="4" md="12" sm="12">
                 <div className="footer-subscribe-block px-3">  
                 <p> Sign up for emails packed with finds and inspiration</p>
                     

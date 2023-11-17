@@ -89,12 +89,12 @@ function Home() {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col lg="6" md="6" >
               <div className="hero-img">
                 <img src={HeroImg} alt="heroimg" title="heroimg" />
               </div>
             </Col>
-          </Row>
+        </Row>
         </Container>
       </section>
       {/* SERVICE SECTION */}
