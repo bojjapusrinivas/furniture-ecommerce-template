@@ -1,0 +1,16 @@
+.commanbanner {
+    padding: 100px 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), url(../../../assets/images/hero-img.png));
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.commanbanner h2 {
+    font-size: 22px;
+    color: #fff;
+}
