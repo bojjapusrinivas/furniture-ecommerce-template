@@ -5,7 +5,7 @@ import logo from "../../assets/images/eco-logo.png";
 import userIcon from "../../assets/images/user-icon.png";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
+import {useSelector} from "react-redux"
 
 const nav_links = [
   {
@@ -25,6 +25,7 @@ const nav_links = [
 function Header() {
   const menuRef = useRef(null);
   const headerRef = useRef(null);
+  const totalQuantity = useSelector(state => state.cart.totalQuantity )
 
   const totalQuantity = useSelector(state => state.cart.totalQuantity)
 
