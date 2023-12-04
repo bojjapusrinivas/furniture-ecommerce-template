@@ -20,7 +20,13 @@
     display: flex;
     justify-content:center;
     align-items: center;
+    position: relative;
 
+}
+
+.search-widget span{
+    position: absolute;
+    right: 20px;
 }
 .search-widget input{
     width: 100%;
