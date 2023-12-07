@@ -3,7 +3,7 @@ import "./Header.css";
 import { Container, Row } from "reactstrap";
 import logo from "../../assets/images/eco-logo.png";
 import userIcon from "../../assets/images/user-icon.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {useSelector} from "react-redux"
 
@@ -47,6 +47,11 @@ function Header() {
 
   const togglemenu = () => menuRef.current.classList.toggle("mobil-menu-active")
 
+  const navagate = useNavigate();
+  const navagateToCart = ()=>{
+      navagate("/cart")
+
+  }
 
 
   return (
@@ -88,7 +93,7 @@ function Header() {
                 <i class="ri-heart-line"></i>
                 <span className="badge">1</span>
               </span>
-              <span className="cart_icon">
+              <span className="cart_icon" onClick={navagateToCart}>
                 <i class="ri-shopping-bag-line"></i>
                 <span className="badge">{totalQuantity}</span>
               </span>

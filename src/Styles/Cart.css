@@ -1,0 +1,42 @@
+
+
+.cart-table{
+    width: 100%;
+}
+
+.cart-table thead tr th{
+  text-align: center;
+}
+
+.cart-table tbody tr td{
+   vertical-align: middle;
+  }
+
+.cart-table tbody .cart-img img{
+   width: 50px;
+   height: auto;
+   margin: 0 auto;
+   display: block;
+}
+
+.cart-table tbody .cart-quantiy,
+.cart-table tbody .cart-price{
+    text-align: center;
+    font-weight: 500;
+    width: 80px;
+}{
+    text-align: center;
+    font-weight: bold;
+    width: 50px;
+}
+.cart-table tbody .cart-delete{
+    text-align: center;
+    
+}
+
+.cart-table tbody .cart-delete i{
+    display: block;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+}

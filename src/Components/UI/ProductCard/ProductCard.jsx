@@ -21,6 +21,8 @@ function ProductCard({items}) {
       id:items.id,
       productName:items.productName,
       imgUrl:items.imgUrl,
+      price:items.price,
+      quantity:items.quantity
     }))
 
    toast.success("Product Added Successfully");
