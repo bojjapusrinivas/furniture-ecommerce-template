@@ -11,9 +11,7 @@ import ProductList from '../Components/UI/ProductCard/ProductList.jsx'
 
 
 function Shop() {
-
   const[productData, SetproductData] =useState(products)
-
   const handleFilter = (e) =>{
     const filterValue = e.target.value;
     if(filterValue === "sofa"){
@@ -22,7 +20,6 @@ function Shop() {
       })
       SetproductData(filterProducts)
     }
-
 
     if(filterValue === "chair"){
       const filterProducts = products.filter(item =>{
@@ -58,7 +55,25 @@ function Shop() {
     const searchTerm = e.target.value;
     const searchProducts = products.filter(item => item.productName.toLowerCase().includes(searchTerm.toLowerCase()))
     SetproductData(searchProducts)
+  }
 
+  const handelorder = (e) =>{
+    const ordervalue = e.target.value;
+    if(ordervalue === "accending"){
+      const sortProducts = [...products].sort((a, b) =>
+      a.productName.localeCompare(b.productName)
+      );
+      SetproductData(sortProducts);
+      console.log(sortProducts);
+    }
+
+    if(ordervalue === "decessing"){
+      const sortProducts = [...products]
+      .sort((a, b) => a.productName.localeCompare(b.productName))
+      .reverse();
+        SetproductData(sortProducts);
+        console.log(sortProducts);
+    }
 
   }
 
@@ -82,10 +97,10 @@ function Shop() {
 
       <Col lg="3" md="3">
         <div className="filter-widget">
-          <select>
+          <select onChange={handelorder}>
           <option> Select By Order</option>
-          <option>Accending</option>
-          <option value="chair">Decessing</option>
+          <option value='accending'>Accending</option>
+          <option value='decessing'>Decessing</option>
           </select>
         </div>
       </Col>

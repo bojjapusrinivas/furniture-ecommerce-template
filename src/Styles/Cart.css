@@ -24,10 +24,6 @@
     text-align: center;
     font-weight: 500;
     width: 80px;
-}{
-    text-align: center;
-    font-weight: bold;
-    width: 50px;
 }
 .cart-table tbody .cart-delete{
     text-align: center;
@@ -36,7 +32,31 @@
 
 .cart-table tbody .cart-delete i{
     display: block;
-    color: red;
+    color: rgb(41, 7, 7);
     cursor: pointer;
     font-size: 16px;
+}
+
+.ordersummery-block{
+    background-color: #f3f2f2;
+}
+
+.cart-btn {
+    width: 158px;
+    background: var(--primary-color) !important;
+    color: #fff;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 3px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    transform-origin: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.cart-btn.disabled{
+    background: #ccc !important;
+    cursor:none;
 }
