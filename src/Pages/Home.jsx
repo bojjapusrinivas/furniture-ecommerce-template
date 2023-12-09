@@ -6,13 +6,11 @@ import { motion } from "framer-motion";
 
 // CSS
 import "../Styles/Home.css";
-
 // COMPONENTS
 import Helmet from "../Components/Helmet/Helmet";
 import Services from "../Services/services";
 import ProductList from "../Components/UI/ProductCard/ProductList";
 import TimmerClock from "../Components/UI/TimmerClock/TimmerClock";
-
 // IMAGES
 import HeroImg from "../assets/images/hero-img.png";
 import CounterImg from "../assets/images/counter-timer-img.png"

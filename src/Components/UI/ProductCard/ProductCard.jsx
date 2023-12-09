@@ -21,6 +21,8 @@ function ProductCard({items}) {
       id:items.id,
       productName:items.productName,
       imgUrl:items.imgUrl,
+      price:items.price,
+      quantity:items.quantity
     }))
 
    toast.success("Product Added Successfully");
@@ -35,7 +37,7 @@ function ProductCard({items}) {
           <motion.img whileHover={{scale:0.9}}src={items.imgUrl} alt="productimg" title="productimage" />
         </div>
         <div className="product-info">
-          <h3><Link to={`shop/${items.id}`}>{items.productName} </Link></h3>
+          <h3><Link to={`/shop/${items.id}`}>{items.productName} </Link></h3>
           <span>{items.category}</span>
         </div>  
         <div className="product-purchase-info">
