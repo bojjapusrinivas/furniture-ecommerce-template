@@ -122,20 +122,13 @@ function Shop() {
   <section>
     <Container>
       <Row>
-
             {
               productData.length === 0 ? <h3 className="text-center mt-5"> No Products were Found</h3>
               :<ProductList data={productData}/>
             }
-
       </Row>
     </Container>
   </section>
-
-
-
-
-
 
   </Helmet>
 }
