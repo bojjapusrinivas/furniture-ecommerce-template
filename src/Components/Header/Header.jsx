@@ -27,7 +27,7 @@ function Header() {
   const headerRef = useRef(null);
   const totalQuantity = useSelector(state => state.cart.totalQuantity )
 
-  const totalQuantity = useSelector(state => state.cart.totalQuantity)
+  
 
   const stickyHeaderFun = () => {
     window.addEventListener("scroll", () => {

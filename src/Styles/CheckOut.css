@@ -1,0 +1,33 @@
+
+.billing-info-block,
+.CheckOut-info-block{
+    padding: 5px;
+}
+
+.billing-info-block h5,
+.CheckOut-info-block h5{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.form_group, .form_group input{
+    width: 100%;
+}
+
+.form_group input{
+    padding: 3.5px;
+    border-radius: 3px;
+    font-size: 15px;
+    border:rgba(0,0,0,0.2) solid 1px;
+}
+
+.CheckOut-info-block h5{
+    margin-bottom: 0px;
+    font-weight: 600;
+    color:#fff
+}
+
+.CheckOut-info-block h6{
+    margin-bottom: 10px;
+    font-weight: 600;
+    color:#fff
+}
