@@ -3,18 +3,18 @@ import React from 'react'
 import Helmet from '../Components/Helmet/Helmet'
 //COMPONENTS
 import Commonsection from '../Components/UI/CommonSection/Commonsection'
-import { Container, Row, Col, Button, FormGroup } from 'reactstrap'
-//css
-import "../Styles/CheckOut.css"
+import { Container,Row, Col, FormGroup, Button } from 'reactstrap'
 
-// Redux
-import cartSlice from '../redux/Slice/cartSlice'
+//redux
 import { useSelector } from 'react-redux'
+
+//CSS
+import "../Styles/Checkout.css"
 
 function CheckOut() {
 
-  const totalQuantity = useSelector(state => state.cart.totalQuantity)
-  const totalAmount = useSelector(state=>state.cart.totalAmount)
+  const totalQuantity = useSelector(State => State.cart.totalQuantity)
+  const totalAmount = useSelector(State => State.cart.totalAmount)
 
   return  <Helmet title={"CHECKOUT"}>
 
@@ -22,75 +22,83 @@ function CheckOut() {
 
   </Commonsection>
 
-  <section id="checkOut" className='padding-top-50'>
+
+  <section className='padding-top-50'>
     <Container>
-        <Row>
-          <Col lg="8">
-            <div className='billing-info-block'>
-            <h5>Billing Information</h5>
+      <Row>
+        <Col  lg="8">
+            <div className="subtitle text-center">
+                <h2>Billing Information</h2>
+              </div>
+         
+          <div className="billing-info">
+          <FormGroup className="form-group w-100">
+            <input className="w-100" type='text' placeholder='Enter your name' />
+          </FormGroup>
+          <FormGroup className="form-group w-100">
+            <input className="w-100" type='email' placeholder='Email Address' />
+          </FormGroup>
 
-            <FormGroup className='form_group'>
-              <input type='text' placeholder='Enter your Name'/>
+          <FormGroup className="form-group w-100">
+            <input className="w-100" type="Number" placeholder='Enter your Phone Number'/>
+          </FormGroup>
+
+          <FormGroup className="form-group w-100">
+            <input  className="w-100" type='text' placeholder='Address' />
+          </FormGroup>
+
+          
+          <FormGroup className="form-group w-100">
+            <input  className="w-100" type='text' placeholder='City' />
+          </FormGroup>
+          <FormGroup className="form-group w-100">
+            <input className="w-100" type='text' placeholder='Postel Code' />
+          </FormGroup>
+
+
+          <FormGroup className="form-group w-100">
+            <input className="w-100" type='text' placeholder='Country' />
             </FormGroup>
 
-            <FormGroup className='form_group'>
-              <input type='email' placeholder='Enter your Email'/>
-            </FormGroup>
-
-            <FormGroup className='form_group'>
-              <input type='number' placeholder='Enter your Phone Number'/>
-            </FormGroup>
-
-            <FormGroup className='form_group'>
-              <input type='text' placeholder='Enter your Streen'/>
-            </FormGroup>
-
-            <FormGroup className='form_group'>
-              <input type='text' placeholder='Enter your City'/>
-            </FormGroup>
-
-            <FormGroup className='form_group'>
-              <input type='text' placeholder='Enter your PinCode'/>
-            </FormGroup>
-
-            <FormGroup className='form_group'>
-              <input type='text' placeholder='Enter your Country'/>
-            </FormGroup>
             </div>
-          </Col>
 
-          <Col lg="4">
-          <div className='CheckOut-info-block'>
-            <h5 className='text-dark mb-4'>Check Out Info</h5>
-            <div className='bg-dark p-3'>
-            <div className="d-flex justify-content-between align-items-center">
-              <h6>Total Quantity</h6>
-              <h6 className='text-right'>{totalQuantity} items</h6>
+         
+
+        </Col>
+
+       <Col lg="4">
+
+       <div className="subtitle text-center">
+                <h2>CheckOut Details</h2>
+              </div>
+        <div className='checkout_cart'> 
+            <div className='d-flex justify-content-between'>
+              <h6>Total Quantity:</h6>
+              <h6>{totalQuantity}</h6>
             </div>
-            <div className="d-flex justify-content-between align-items-center">
-              <h6>Sub Total</h6>
-              <h6 className='text-right'>${totalAmount}</h6>
+            <div className='d-flex justify-content-between'>
+              <h6>SubTotal:$</h6>
+              <h6>{totalAmount}</h6>
             </div>
-            <div className="d-flex justify-content-between align-items-center">
-              <h6>Shipping</h6>
-              <h6 className='text-right'>$120</h6>
+
+            <div className='d-flex justify-content-between'>
+              <h6>FreeShipping</h6>
+            
             </div>
-            <div className="d-flex justify-content-between align-items-center">
-              <h6>Free Shipping</h6>
+            <div className='d-flex justify-content-between'>
+              <h6>Total Cost:$</h6>
+              <h6>{totalAmount}</h6>
             </div>
-            <hr/>
-            <div className="d-flex justify-content-between align-items-center">
-              <h5 className='mb-0'>Total Cost</h5>
-              <h5 className='text-right mb-0'>${totalAmount}</h5>
-            </div>
-            <hr/>
-            <Button className='btn btn-block bg-dark bg-white text-dark w-100'>Place an Order</Button>
-          </div>
-          </div>
-          </Col>
-        </Row>
+
+            <div className="divider"></div>
+            <Button className='btn btn-sm d-block w-100 bg-white text-dark'>Place an Order</Button>
+            
+
+        </div>
+
+        </Col>
+      </Row>
     </Container>
-
 
   </section>
 
