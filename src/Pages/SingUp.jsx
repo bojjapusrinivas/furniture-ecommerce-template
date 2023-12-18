@@ -6,11 +6,14 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 function SingUp() {
-  return  <Helmet title={"SIGNUP"}>
+
   const [email,setEmail]  = useState()
   const [password,setPassword]  = useState()
   const [username,setUsername]  = useState()
   const [filename,setFilename]  = useState()
+
+  return  <Helmet title={"SIGNUP"}>
+  
     
   <section className="signup">
   <Container> 
@@ -19,22 +22,21 @@ function SingUp() {
         <h3 fs-4 className='my-3 text-center fw-bold'>SIGNUP</h3>
         <Form className='aut-form bg-dark p-3 text-center ' >
             <FormGroup className='my-1 w-100'>
-              <input type='text' placeholder='Enter UserName' className=' w-100 p-2'/>
+              <input type='text' placeholder='Enter UserName' className=' w-100 p-2' value={username}/>
             </FormGroup>
             <FormGroup className='my-1 w-100'>
-              <input type='text' placeholder='Enter Email' className=' w-100 p-2'/>
+              <input type='text' placeholder='Enter Email' className=' w-100 p-2'value={email}/>
             </FormGroup>
             <FormGroup className='my-1  w-100'>
-              <input type='Password' placeholder='Enter Password' className=' w-100 p-2'/>
+              <input type='Password' placeholder='Enter Password' className=' w-100 p-2' value={password}/>
             </FormGroup>
-            <FormGroup className='my-1 w-100'>
-              <input type='file'  className=' w-100 p-2'/>
+            <FormGroup className='my-1 w-100 d-flex justify-content-start align-items-center'>
+              <input type='file'  className='p-2 mr-2' style={{width:"120px"}} value={filename}/>
+              <span className='text-white'><small>No File has Choosen</small></span>
             </FormGroup>
-            <Button type='submit' className='log_btn btn btn-md bg-white text-dark my-3 fw-bold '> Register </Button>
+            <Button type='submit' className='log_btn btn btn-md bg-white text-dark my-3 fw-bold '> Create an Account </Button>
             <p>Already have Account?<Link to="/login" className='text-default' style={{textDecoration:"none"}}>SignIn</Link></p>
         </Form>
-
-
       </Col>
     </Row>
   </Container>

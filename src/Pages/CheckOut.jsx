@@ -92,8 +92,6 @@ function CheckOut() {
 
             <div className="divider"></div>
             <Button className='btn btn-sm d-block w-100 bg-white text-dark'>Place an Order</Button>
-            
-
         </div>
 
         </Col>
