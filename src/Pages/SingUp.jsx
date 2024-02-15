@@ -42,8 +42,6 @@ function SingUp() {
       </Col>
     </Row>
   </Container>
-
-
   </section>
 
 
